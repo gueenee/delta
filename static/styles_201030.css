@@ -1,0 +1,42 @@
+.chapter-input, .chapter-output{
+    width: 100%;
+}
+
+.input-column, .output-column, .btn-column {
+    padding: 15px;
+    height: 100vh;
+}
+
+.btn-box {
+    width: auto;
+    height: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: white;
+}
+
+label {
+    margin-top: 8px;
+}
+
+#intro .ck-editor__editable_inline {
+    min-height: 150px;
+    max-height: 150px;
+}
+
+#chapter .ck-editor__editable_inline {
+    min-height: 230px;
+    max-height: 230px;
+}
+
+#author-note .ck-editor__editable_inline {
+    min-height: 150px;
+    max-height: 150px;
+}
+
+#output {
+    min-height: 85vh;
+    max-height: 85vh;
+}
