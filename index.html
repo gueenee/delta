@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+        
+        <script src="static/scripts.js"></script>
+        <script src="static/ckeditor.js"></script>
+
+        <title>Text converter</title>
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+    
+                <div class="col-5 input-column">
+                    <label for="intro">Intro:</label>
+                    <div id="intro">
+                        <div id="introEditor">
+                        </div>
+                    </div>
+
+                    <label for="prevLink">Previous chapter link:</label>
+                    <input type="text" class="form-control" id="prevLink" placeholder="Link here...">
+
+                    <label for="chapter">Chapter text:</label>
+                    <div id="chapter">
+                        <div id="chapterEditor">
+                        </div>
+                    </div>
+
+                    <label for="author-note">Author's note:</label>
+                    <div id="author-note">
+                        <div id="authorNoteEditor">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 btn-column">
+                    <div class="btn-box d-flex justify-content-center align-items-center">
+                        <button id="convert" class="btn btn-primary convert-btn">Convert</button>
+                    </div>
+                </div>
+                
+                <div class="col-5 output-column">
+                    <label for="output">Output:</label>
+                    <textarea id="output" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
