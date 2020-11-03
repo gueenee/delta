@@ -68,7 +68,7 @@ function makeEditor(id, obj) {
 }
 
 // Timeout promise for async
-function resolveAfter100ms(obj, data) {
+function resolveAfter100ms() {
     return new Promise(resolve => {
         setTimeout(() => {
             resolve();
